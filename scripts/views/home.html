@@ -1,0 +1,16 @@
+<section>
+    <div class="row">
+
+        <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="value in result"
+>
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="pull-right">{{value.id}}</h4>
+                    <h4><a ng-href="/details/{{value.full_name.replace('/','_')}}">{{value.full_name}}</a>
+                                </h4>
+                    <p>{{value.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
